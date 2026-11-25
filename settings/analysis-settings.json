@@ -1,0 +1,266 @@
+{
+ "dataset": "TCGA-KIRC, 200 primary tumours, RNA-seq counts (STAR, unstranded) from the NCI Genomic Data Commons, imported in the LSMA Analysis Lab",
+ "survival_model": {
+  "workflow": "machine-learning",
+  "workflow_version": "1.0.0",
+  "parameters": {
+   "input": {
+    "task": "survival",
+    "outcome_column": null,
+    "positive_class": null,
+    "negative_class": null,
+    "time_column": "survival_days",
+    "event_column": "vital_status",
+    "event_value": "Dead",
+    "group_column": null,
+    "subset_column": null,
+    "subset_value": null,
+    "max_features_loaded": 20000
+   },
+   "training": {
+    "models": [
+     "logistic_regression",
+     "random_forest",
+     "svm"
+    ],
+    "n_features": 200,
+    "test_fraction": 0.25,
+    "cv_folds": 5,
+    "tune": true,
+    "cv_repeats": 2,
+    "n_permutations": 100
+   },
+   "evaluation": {},
+   "explanation": {
+    "n_top_features": 20,
+    "n_repeats": 20
+   }
+  },
+  "non_default": {
+   "input": [
+    "task",
+    "time_column",
+    "event_column",
+    "event_value"
+   ]
+  },
+  "software_versions": {
+   "python": "3.12.16",
+   "scikit-learn": "1.9.1",
+   "numpy": "2.5.4",
+   "pandas": "2.3.3",
+   "scipy": "1.18.1",
+   "lifelines": "0.30.3",
+   "joblib": "1.6.0"
+  },
+  "stage_summaries": {
+   "input": {
+    "task": "survival",
+    "features": "gene expression, log2(counts per million + 1)",
+    "features_in_file": 60660,
+    "features_expressed": 17316,
+    "expression_filter": "more than 1 count per million in at least 20% of samples",
+    "restricted_to": "none",
+    "time_column": "survival_days",
+    "event_column": "vital_status",
+    "event_value": "Dead",
+    "n_samples": 200,
+    "n_events": 82,
+    "median_follow_up": 1168.5,
+    "n_features": 17316,
+    "warnings": [
+     "There are 17,316 features for 200 samples. With far more features than samples a model can always find a pattern that fits the training data by chance; only the held-out test set shows whether it is real."
+    ]
+   },
+   "training": {
+    "task": "survival",
+    "n_training": 150,
+    "n_test": 50,
+    "events_training": 61,
+    "events_test": 21,
+    "model": "Cox regression with elastic-net penalty (lifelines), on the most variable features of the training patients",
+    "features_considered": 50,
+    "cross_validation": "5-fold on the training patients",
+    "chosen_penalty": 0.1,
+    "cv_c_index_mean": 0.6785,
+    "cv_c_index_sd": 0.0837,
+    "features_in_final_model": 17,
+    "permutation_test": "not run for survival models",
+    "warnings": []
+   },
+   "evaluation": {
+    "n_test": 50,
+    "events_test": 21,
+    "test_c_index": 0.6592,
+    "test_c_index_interval": "0.53 to 0.78 (95%, bootstrap)",
+    "cv_c_index": 0.6785,
+    "logrank_p_high_vs_low_risk": 0.03005,
+    "validated_on": "a held-out part of the same dataset; a second, independent cohort is the stronger test and is not available here",
+    "warnings": []
+   },
+   "explanation": {
+    "method": "weights of the penalised Cox model",
+    "features_with_weight": 17,
+    "top_features": [
+     "TMEM213",
+     "LRP2",
+     "IGHG1",
+     "SLC6A19",
+     "ENPP3",
+     "ATP6V0A4",
+     "KRT19",
+     "PCK1"
+    ],
+    "warnings": []
+   }
+  }
+ },
+ "stage_model": {
+  "workflow": "machine-learning",
+  "workflow_version": "1.0.0",
+  "parameters": {
+   "input": {
+    "task": "classification",
+    "outcome_column": "stage",
+    "positive_class": "Stage IV",
+    "negative_class": "Stage I",
+    "time_column": null,
+    "event_column": null,
+    "event_value": null,
+    "group_column": null,
+    "subset_column": null,
+    "subset_value": null,
+    "max_features_loaded": 20000
+   },
+   "training": {
+    "models": [
+     "logistic_regression",
+     "lasso",
+     "elastic_net",
+     "random_forest",
+     "svm",
+     "hist_gradient_boosting"
+    ],
+    "n_features": 200,
+    "test_fraction": 0.25,
+    "cv_folds": 5,
+    "tune": true,
+    "cv_repeats": 2,
+    "n_permutations": 100
+   },
+   "evaluation": {},
+   "explanation": {
+    "n_top_features": 20,
+    "n_repeats": 20
+   }
+  },
+  "non_default": {
+   "input": [
+    "outcome_column",
+    "positive_class",
+    "negative_class"
+   ],
+   "training": [
+    "models"
+   ]
+  },
+  "software_versions": {
+   "python": "3.12.16",
+   "scikit-learn": "1.9.1",
+   "numpy": "2.5.4",
+   "pandas": "2.3.3",
+   "scipy": "1.18.1",
+   "lifelines": "0.30.3",
+   "joblib": "1.6.0"
+  },
+  "stage_summaries": {
+   "input": {
+    "task": "classification",
+    "features": "gene expression, log2(counts per million + 1)",
+    "features_in_file": 60660,
+    "features_expressed": 17316,
+    "expression_filter": "more than 1 count per million in at least 20% of samples",
+    "restricted_to": "none",
+    "outcome_column": "stage",
+    "positive_class": "Stage IV",
+    "negative_class": "Stage I",
+    "n_samples": 115,
+    "n_positive": 22,
+    "n_negative": 93,
+    "n_features": 17316,
+    "warnings": [
+     "The classes are unbalanced (22 against 93). Accuracy is misleading here: a model that always answers the larger class already looks good. Read balanced accuracy and the ROC curve instead.",
+     "85 sample(s) with another value of 'stage' were left out.",
+     "There are 17,316 features for 115 samples. With far more features than samples a model can always find a pattern that fits the training data by chance; only the held-out test set shows whether it is real."
+    ]
+   },
+   "training": {
+    "task": "classification",
+    "n_training": 86,
+    "n_test": 29,
+    "test_fraction": 0.25,
+    "split": "stratified by class",
+    "cross_validation": "5-fold, repeated 2 times, on the training samples",
+    "features_selected_per_fold": "the 200 features with the largest F statistic, chosen inside every fold",
+    "tuning": "settings tuned by an inner 3-fold cross-validation (nested)",
+    "models_compared": [
+     "Logistic regression (L2)",
+     "Logistic regression (lasso)",
+     "Logistic regression (elastic net)",
+     "Random forest",
+     "Support vector machine (linear)",
+     "Histogram gradient boosting"
+    ],
+    "chosen_model": "Random forest",
+    "chosen_settings": {
+     "max_features": "sqrt"
+    },
+    "cv_auc_mean": 0.8274,
+    "cv_auc_sd": 0.1554,
+    "permutation_p_value": 0.0099,
+    "permutations": 100,
+    "auc_with_shuffled_labels_mean": 0.5158,
+    "features_in_final_model": 200,
+    "features_chosen_in_every_fold": 54,
+    "warnings": [
+     "Random forest scored highest, but 5 other model(s) cannot be told apart from it on these folds (Logistic regression (L2), Logistic regression (lasso), Logistic regression (elastic net)). Picking the top of a table like this is usually picking noise; prefer the simplest model among those that cannot be separated.",
+     "The best two models differ by less than the spread between folds. The choice between them is not meaningful."
+    ]
+   },
+   "evaluation": {
+    "n_test": 29,
+    "test_auc": 0.8841,
+    "test_auc_interval": "0.72 to 1.00 (95%, bootstrap)",
+    "cv_auc": 0.8274,
+    "accuracy": 0.8276,
+    "balanced_accuracy": 0.6449,
+    "sensitivity": 0.3333,
+    "specificity": 0.9565,
+    "positive_class": "Stage IV",
+    "threshold": 0.5,
+    "validated_on": "a held-out part of the same dataset; a second, independent dataset is the stronger test and is not available here",
+    "warnings": [
+     "Only 29 test samples: look at the interval (0.72 to 1.00), not at the single number."
+    ]
+   },
+   "explanation": {
+    "method": "permutation importance on the test samples (20 shuffles per feature), for the 200 features of the Random forest model",
+    "test_auc": 0.8841,
+    "features_in_model": 200,
+    "features_that_matter": 24,
+    "top_features": [
+     "HJURP",
+     "AC037198.1",
+     "OASL",
+     "ALDH1L1",
+     "NUMBL",
+     "IBA57",
+     "C1QL1",
+     "RORC"
+    ],
+    "shap_values": "not computed (permutation importance is used instead)",
+    "warnings": []
+   }
+  }
+ }
+}

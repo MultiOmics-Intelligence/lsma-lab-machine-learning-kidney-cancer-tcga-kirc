@@ -1,0 +1,7 @@
+model	mean_auc	sd	min	max	folds	behind_the_best_by	told_apart_from_the_best	chosen
+Random forest	0.8274	0.1554	0.5536	1	10	0	False	True
+Histogram gradient boosting	0.8262	0.1364	0.5714	1	10	0.0012	False	False
+Logistic regression (lasso)	0.8089	0.1352	0.5952	0.9762	10	0.0185	False	False
+Logistic regression (L2)	0.7875	0.1468	0.5536	1	10	0.0399	False	False
+Logistic regression (elastic net)	0.75	0.1979	0.4048	1	10	0.0774	False	False
+Support vector machine (linear)	0.7446	0.1551	0.4762	0.9524	10	0.0827	False	False

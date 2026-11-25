@@ -1,0 +1,201 @@
+sample_id	patient	tissue	sample_type	gender	age_at_diagnosis	stage	primary_diagnosis	vital_status	survival_days
+TCGA-B4-5832-01A	TCGA-B4-5832	tumour	Primary Tumor	male	65	Stage III	Clear cell adenocarcinoma, NOS	Alive	155
+TCGA-B4-5834-01A	TCGA-B4-5834	tumour	Primary Tumor	male	59	Stage I	Clear cell adenocarcinoma, NOS	Alive	38
+TCGA-B4-5835-01A	TCGA-B4-5835	tumour	Primary Tumor	female	64	Stage I	Clear cell adenocarcinoma, NOS	Alive	16
+TCGA-B4-5836-01A	TCGA-B4-5836	tumour	Primary Tumor	female	61	Stage I	Clear cell adenocarcinoma, NOS	Alive	141
+TCGA-B4-5838-01A	TCGA-B4-5838	tumour	Primary Tumor	male	52		Clear cell adenocarcinoma, NOS	Alive	166
+TCGA-B4-5843-01A	TCGA-B4-5843	tumour	Primary Tumor	male	45	Stage I	Clear cell adenocarcinoma, NOS	Alive	11
+TCGA-B4-5844-01A	TCGA-B4-5844	tumour	Primary Tumor	female	61	Stage II	Clear cell adenocarcinoma, NOS	Alive	7
+TCGA-B8-4143-01A	TCGA-B8-4143	tumour	Primary Tumor	female	66	Stage IV	Clear cell adenocarcinoma, NOS	Dead	709
+TCGA-B8-4146-01B	TCGA-B8-4146	tumour	Primary Tumor	female	41	Stage I	Clear cell adenocarcinoma, NOS	Alive	511
+TCGA-B8-4148-01A	TCGA-B8-4148	tumour	Primary Tumor	female	63	Stage I	Clear cell adenocarcinoma, NOS	Alive	1520
+TCGA-B8-4151-01A	TCGA-B8-4151	tumour	Primary Tumor	female	51	Stage III	Clear cell adenocarcinoma, NOS	Alive	1299
+TCGA-B8-4153-01B	TCGA-B8-4153	tumour	Primary Tumor	male	74	Stage III	Clear cell adenocarcinoma, NOS	Alive	762
+TCGA-B8-4154-01A	TCGA-B8-4154	tumour	Primary Tumor	female	73	Stage I	Clear cell adenocarcinoma, NOS	Alive	1380
+TCGA-B8-4619-01A	TCGA-B8-4619	tumour	Primary Tumor	male	58	Stage I	Clear cell adenocarcinoma, NOS	Alive	523
+TCGA-B8-4620-01A	TCGA-B8-4620	tumour	Primary Tumor	female	72		Not Reported	Alive	777
+TCGA-B8-4621-01A	TCGA-B8-4621	tumour	Primary Tumor	male	63	Stage I	Clear cell adenocarcinoma, NOS	Alive	788
+TCGA-B8-4622-01A	TCGA-B8-4622	tumour	Primary Tumor	male	57	Stage IV	Clear cell adenocarcinoma, NOS	Alive	1525
+TCGA-B8-5158-01A	TCGA-B8-5158	tumour	Primary Tumor	male	56	Stage III	Clear cell adenocarcinoma, NOS	Alive	1218
+TCGA-B8-5159-01A	TCGA-B8-5159	tumour	Primary Tumor	female	61	Stage I	Clear cell adenocarcinoma, NOS	Alive	722
+TCGA-B8-5162-01A	TCGA-B8-5162	tumour	Primary Tumor	male	62	Stage II	Clear cell adenocarcinoma, NOS	Alive	36
+TCGA-B8-5163-01A	TCGA-B8-5163	tumour	Primary Tumor	female	63	Stage III	Clear cell adenocarcinoma, NOS	Alive	822
+TCGA-B8-5164-01A	TCGA-B8-5164	tumour	Primary Tumor	male	65	Stage III	Clear cell adenocarcinoma, NOS	Alive	26
+TCGA-B8-5165-01A	TCGA-B8-5165	tumour	Primary Tumor	male	43	Stage I	Clear cell adenocarcinoma, NOS	Alive	737
+TCGA-B8-5545-01A	TCGA-B8-5545	tumour	Primary Tumor	male	42	Stage I	Clear cell adenocarcinoma, NOS	Alive	1525
+TCGA-B8-5546-01A	TCGA-B8-5546	tumour	Primary Tumor	female	38	Stage I	Clear cell adenocarcinoma, NOS	Alive	505
+TCGA-B8-5549-01A	TCGA-B8-5549	tumour	Primary Tumor	male	53	Stage I	Clear cell adenocarcinoma, NOS	Alive	194
+TCGA-B8-5550-01A	TCGA-B8-5550	tumour	Primary Tumor	male	72		Not Reported	Alive	1476
+TCGA-B8-5551-01A	TCGA-B8-5551	tumour	Primary Tumor	female	65	Stage I	Clear cell adenocarcinoma, NOS	Alive	16
+TCGA-B8-5552-01B	TCGA-B8-5552	tumour	Primary Tumor	female	41	Stage I	Clear cell adenocarcinoma, NOS	Alive	1046
+TCGA-B8-5553-01A	TCGA-B8-5553	tumour	Primary Tumor	female	67	Stage I	Clear cell adenocarcinoma, NOS	Alive	435
+TCGA-B8-A54D-01A	TCGA-B8-A54D	tumour	Primary Tumor	male	69	Stage III	Renal cell carcinoma, NOS	Alive	830
+TCGA-B8-A54E-01A	TCGA-B8-A54E	tumour	Primary Tumor	female	62	Stage I	Renal cell carcinoma, NOS	Alive	909
+TCGA-B8-A54F-01A	TCGA-B8-A54F	tumour	Primary Tumor	female	49	Stage I	Renal cell carcinoma, NOS	Alive	519
+TCGA-B8-A54G-01A	TCGA-B8-A54G	tumour	Primary Tumor	male	50	Stage I	Renal cell carcinoma, NOS	Alive	53
+TCGA-B8-A54H-01A	TCGA-B8-A54H	tumour	Primary Tumor	female	69	Stage II	Renal cell carcinoma, NOS	Alive	256
+TCGA-B8-A54I-01A	TCGA-B8-A54I	tumour	Primary Tumor	male	48	Stage I	Renal cell carcinoma, NOS	Alive	150
+TCGA-B8-A54J-01A	TCGA-B8-A54J	tumour	Primary Tumor	male	60	Stage II	Renal cell carcinoma, NOS	Alive	528
+TCGA-B8-A54K-01A	TCGA-B8-A54K	tumour	Primary Tumor	male	50	Stage I	Transitional cell carcinoma in situ	Alive	469
+TCGA-B8-A7U6-01A	TCGA-B8-A7U6	tumour	Primary Tumor	female	54	Stage I	Clear cell adenocarcinoma, NOS	Alive	495
+TCGA-B8-A8YJ-01A	TCGA-B8-A8YJ	tumour	Primary Tumor	female	60	Stage I	Clear cell adenocarcinoma, NOS	Alive	431
+TCGA-BP-4158-01A	TCGA-BP-4158	tumour	Primary Tumor	male	69	Stage I	Clear cell adenocarcinoma, NOS	Alive	3377
+TCGA-BP-4159-01A	TCGA-BP-4159	tumour	Primary Tumor	male	76		Not Reported	Dead	2601
+TCGA-BP-4160-01A	TCGA-BP-4160	tumour	Primary Tumor	male	67	Stage III	Clear cell adenocarcinoma, NOS	Alive	2881
+TCGA-BP-4161-01A	TCGA-BP-4161	tumour	Primary Tumor	male	81		Not Reported	Alive	2746
+TCGA-BP-4162-01A	TCGA-BP-4162	tumour	Primary Tumor	female	65	Stage I	Clear cell adenocarcinoma, NOS	Alive	3074
+TCGA-BP-4163-01A	TCGA-BP-4163	tumour	Primary Tumor	female	60	Stage III	Clear cell adenocarcinoma, NOS	Alive	2839
+TCGA-BP-4164-01A	TCGA-BP-4164	tumour	Primary Tumor	female	51	Stage III	Clear cell adenocarcinoma, NOS	Dead	992
+TCGA-BP-4165-01A	TCGA-BP-4165	tumour	Primary Tumor	female	69		Not Reported	Alive	3037
+TCGA-BP-4166-01A	TCGA-BP-4166	tumour	Primary Tumor	male	69	Stage III	Clear cell adenocarcinoma, NOS	Alive	13
+TCGA-BP-4167-01A	TCGA-BP-4167	tumour	Primary Tumor	male	59	Stage III	Clear cell adenocarcinoma, NOS	Alive	2718
+TCGA-BP-4169-01A	TCGA-BP-4169	tumour	Primary Tumor	female	76	Stage II	Clear cell adenocarcinoma, NOS	Dead	701
+TCGA-BP-4170-01A	TCGA-BP-4170	tumour	Primary Tumor	female	72	Stage I	Clear cell adenocarcinoma, NOS	Dead	2343
+TCGA-BP-4173-01A	TCGA-BP-4173	tumour	Primary Tumor	male	47	Stage II	Clear cell adenocarcinoma, NOS	Alive	1893
+TCGA-BP-4174-01A	TCGA-BP-4174	tumour	Primary Tumor	male	49	Stage II	Clear cell adenocarcinoma, NOS	Alive	1879
+TCGA-BP-4176-01A	TCGA-BP-4176	tumour	Primary Tumor	male	64	Stage I	Clear cell adenocarcinoma, NOS	Alive	1955
+TCGA-BP-4177-01A	TCGA-BP-4177	tumour	Primary Tumor	male	65	Stage I	Clear cell adenocarcinoma, NOS	Alive	1670
+TCGA-BP-4325-01A	TCGA-BP-4325	tumour	Primary Tumor	female	64	Stage I	Clear cell adenocarcinoma, NOS	Alive	2964
+TCGA-BP-4326-01A	TCGA-BP-4326	tumour	Primary Tumor	female	53	Stage I	Clear cell adenocarcinoma, NOS	Dead	1625
+TCGA-BP-4327-01A	TCGA-BP-4327	tumour	Primary Tumor	female	75	Stage II	Clear cell adenocarcinoma, NOS	Dead	109
+TCGA-BP-4329-01A	TCGA-BP-4329	tumour	Primary Tumor	male	75	Stage III	Clear cell adenocarcinoma, NOS	Dead	845
+TCGA-BP-4330-01A	TCGA-BP-4330	tumour	Primary Tumor	female	60	Stage III	Clear cell adenocarcinoma, NOS	Alive	1888
+TCGA-BP-4331-01A	TCGA-BP-4331	tumour	Primary Tumor	male	52	Stage I	Clear cell adenocarcinoma, NOS	Dead	2454
+TCGA-BP-4332-01A	TCGA-BP-4332	tumour	Primary Tumor	male	36	Stage III	Clear cell adenocarcinoma, NOS	Alive	1133
+TCGA-BP-4334-01A	TCGA-BP-4334	tumour	Primary Tumor	male	57		Not Reported	Dead	645
+TCGA-BP-4335-01A	TCGA-BP-4335	tumour	Primary Tumor	female	66		Not Reported	Dead	475
+TCGA-BP-4337-01A	TCGA-BP-4337	tumour	Primary Tumor	female	76	Stage III	Clear cell adenocarcinoma, NOS	Dead	2
+TCGA-BP-4338-01A	TCGA-BP-4338	tumour	Primary Tumor	male	50		Not Reported	Alive	2859
+TCGA-BP-4340-01A	TCGA-BP-4340	tumour	Primary Tumor	female	70	Stage I	Clear cell adenocarcinoma, NOS	Dead	562
+TCGA-BP-4341-01A	TCGA-BP-4341	tumour	Primary Tumor	male	67	Stage III	Clear cell adenocarcinoma, NOS	Dead	1589
+TCGA-BP-4342-01A	TCGA-BP-4342	tumour	Primary Tumor	male	79	Stage II	Clear cell adenocarcinoma, NOS	Dead	2256
+TCGA-BP-4343-01A	TCGA-BP-4343	tumour	Primary Tumor	male	69		Not Reported	Dead	1912
+TCGA-BP-4344-01A	TCGA-BP-4344	tumour	Primary Tumor	female	75	Stage I	Clear cell adenocarcinoma, NOS	Alive	1666
+TCGA-BP-4345-01A	TCGA-BP-4345	tumour	Primary Tumor	male	62	Stage III	Clear cell adenocarcinoma, NOS	Alive	1516
+TCGA-BP-4346-01A	TCGA-BP-4346	tumour	Primary Tumor	male	57	Stage III	Clear cell adenocarcinoma, NOS	Dead	1493
+TCGA-BP-4347-01A	TCGA-BP-4347	tumour	Primary Tumor	male	74	Stage III	Clear cell adenocarcinoma, NOS	Alive	1367
+TCGA-BP-4349-01A	TCGA-BP-4349	tumour	Primary Tumor	female	68	Stage I	Clear cell adenocarcinoma, NOS	Alive	372
+TCGA-BP-4351-01A	TCGA-BP-4351	tumour	Primary Tumor	female	51	Stage III	Clear cell adenocarcinoma, NOS	Alive	970
+TCGA-BP-4352-01A	TCGA-BP-4352	tumour	Primary Tumor	female	74		Not Reported	Dead	344
+TCGA-BP-4353-01A	TCGA-BP-4353	tumour	Primary Tumor	male	61	Stage I	Clear cell adenocarcinoma, NOS	Dead	375
+TCGA-BP-4354-01A	TCGA-BP-4354	tumour	Primary Tumor	male	42		Not Reported	Dead	1034
+TCGA-BP-4355-01A	TCGA-BP-4355	tumour	Primary Tumor	female	59	Stage III	Clear cell adenocarcinoma, NOS	Dead	953
+TCGA-BP-4756-01A	TCGA-BP-4756	tumour	Primary Tumor	female	62	Stage I	Clear cell adenocarcinoma, NOS	Alive	374
+TCGA-BP-4758-01A	TCGA-BP-4758	tumour	Primary Tumor	male	40	Stage I	Clear cell adenocarcinoma, NOS	Alive	2208
+TCGA-BP-4759-01A	TCGA-BP-4759	tumour	Primary Tumor	male	50	Stage I	Clear cell adenocarcinoma, NOS	Alive	2372
+TCGA-BP-4760-01A	TCGA-BP-4760	tumour	Primary Tumor	male	69	Stage I	Clear cell adenocarcinoma, NOS	Alive	2361
+TCGA-BP-4761-01A	TCGA-BP-4761	tumour	Primary Tumor	male	57	Stage III	Clear cell adenocarcinoma, NOS	Alive	182
+TCGA-BP-4762-01A	TCGA-BP-4762	tumour	Primary Tumor	male	42	Stage I	Clear cell adenocarcinoma, NOS	Dead	1343
+TCGA-BP-4763-01A	TCGA-BP-4763	tumour	Primary Tumor	female	79	Stage I	Clear cell adenocarcinoma, NOS	Dead	1270
+TCGA-BP-4765-01A	TCGA-BP-4765	tumour	Primary Tumor	male	43	Stage I	Clear cell adenocarcinoma, NOS	Alive	2184
+TCGA-BP-4766-01A	TCGA-BP-4766	tumour	Primary Tumor	female	43	Stage I	Clear cell adenocarcinoma, NOS	Alive	1462
+TCGA-BP-4768-01A	TCGA-BP-4768	tumour	Primary Tumor	female	72	Stage I	Clear cell adenocarcinoma, NOS	Alive	400
+TCGA-BP-4769-01A	TCGA-BP-4769	tumour	Primary Tumor	male	63	Stage I	Clear cell adenocarcinoma, NOS	Alive	1876
+TCGA-BP-4770-01A	TCGA-BP-4770	tumour	Primary Tumor	female	74		Not Reported	Dead	329
+TCGA-BP-4771-01A	TCGA-BP-4771	tumour	Primary Tumor	male	62		Not Reported	Dead	162
+TCGA-BP-4774-01A	TCGA-BP-4774	tumour	Primary Tumor	female	57	Stage I	Clear cell adenocarcinoma, NOS	Alive	1885
+TCGA-BP-4775-01A	TCGA-BP-4775	tumour	Primary Tumor	female	55	Stage I	Clear cell adenocarcinoma, NOS	Alive	1843
+TCGA-BP-4776-01A	TCGA-BP-4776	tumour	Primary Tumor	male	52	Stage I	Clear cell adenocarcinoma, NOS	Alive	411
+TCGA-BP-4777-01A	TCGA-BP-4777	tumour	Primary Tumor	male	46	Stage I	Clear cell adenocarcinoma, NOS	Alive	1731
+TCGA-BP-4781-01A	TCGA-BP-4781	tumour	Primary Tumor	male	78	Stage I	Clear cell adenocarcinoma, NOS	Alive	2080
+TCGA-BP-4782-01A	TCGA-BP-4782	tumour	Primary Tumor	female	55	Stage I	Clear cell adenocarcinoma, NOS	Alive	354
+TCGA-BP-4784-01A	TCGA-BP-4784	tumour	Primary Tumor	female	67	Stage I	Clear cell adenocarcinoma, NOS	Alive	1854
+TCGA-BP-4787-01A	TCGA-BP-4787	tumour	Primary Tumor	female	60		Not Reported	Dead	480
+TCGA-BP-4789-01A	TCGA-BP-4789	tumour	Primary Tumor	male	48	Stage I	Clear cell adenocarcinoma, NOS	Alive	1489
+TCGA-BP-4790-01A	TCGA-BP-4790	tumour	Primary Tumor	male	76	Stage I	Clear cell adenocarcinoma, NOS	Dead	1111
+TCGA-BP-4795-01A	TCGA-BP-4795	tumour	Primary Tumor	female	74	Stage I	Clear cell adenocarcinoma, NOS	Alive	620
+TCGA-BP-4797-01A	TCGA-BP-4797	tumour	Primary Tumor	male	34	Stage III	Clear cell adenocarcinoma, NOS	Alive	1107
+TCGA-BP-4798-01A	TCGA-BP-4798	tumour	Primary Tumor	male	74		Clear cell adenocarcinoma, NOS	Dead	334
+TCGA-BP-4799-01A	TCGA-BP-4799	tumour	Primary Tumor	male	70	Stage III	Clear cell adenocarcinoma, NOS	Dead	1133
+TCGA-BP-4801-01A	TCGA-BP-4801	tumour	Primary Tumor	male	57	Stage I	Clear cell adenocarcinoma, NOS	Alive	1124
+TCGA-BP-4803-01A	TCGA-BP-4803	tumour	Primary Tumor	male	79	Stage III	Clear cell adenocarcinoma, NOS	Alive	204
+TCGA-BP-4804-01A	TCGA-BP-4804	tumour	Primary Tumor	male	61		Not Reported	Alive	1459
+TCGA-BP-4807-01A	TCGA-BP-4807	tumour	Primary Tumor	male	42	Stage I	Clear cell adenocarcinoma, NOS	Alive	211
+TCGA-BP-4959-01A	TCGA-BP-4959	tumour	Primary Tumor	male	49	Stage I	Clear cell adenocarcinoma, NOS	Alive	2660
+TCGA-BP-4960-01A	TCGA-BP-4960	tumour	Primary Tumor	male	46	Stage II	Clear cell adenocarcinoma, NOS	Alive	2172
+TCGA-BP-4961-01A	TCGA-BP-4961	tumour	Primary Tumor	male	47	Stage I	Clear cell adenocarcinoma, NOS	Alive	1935
+TCGA-BP-4962-01A	TCGA-BP-4962	tumour	Primary Tumor	male	58	Stage II	Clear cell adenocarcinoma, NOS	Alive	1785
+TCGA-BP-4963-01A	TCGA-BP-4963	tumour	Primary Tumor	male	63	Stage I	Clear cell adenocarcinoma, NOS	Alive	1834
+TCGA-BP-4964-01A	TCGA-BP-4964	tumour	Primary Tumor	female	54	Stage I	Clear cell adenocarcinoma, NOS	Alive	1862
+TCGA-BP-4965-01A	TCGA-BP-4965	tumour	Primary Tumor	male	46	Stage I	Clear cell adenocarcinoma, NOS	Alive	1871
+TCGA-BP-4967-01A	TCGA-BP-4967	tumour	Primary Tumor	male	76	Stage III	Clear cell adenocarcinoma, NOS	Alive	205
+TCGA-BP-4968-01A	TCGA-BP-4968	tumour	Primary Tumor	male	40	Stage I	Clear cell adenocarcinoma, NOS	Alive	1746
+TCGA-BP-4969-01A	TCGA-BP-4969	tumour	Primary Tumor	female	63	Stage I	Clear cell adenocarcinoma, NOS	Alive	1794
+TCGA-BP-4970-01A	TCGA-BP-4970	tumour	Primary Tumor	male	44	Stage III	Clear cell adenocarcinoma, NOS	Alive	433
+TCGA-BP-4971-01A	TCGA-BP-4971	tumour	Primary Tumor	male	40	Stage III	Clear cell adenocarcinoma, NOS	Alive	1487
+TCGA-BP-4972-01A	TCGA-BP-4972	tumour	Primary Tumor	female	43	Stage III	Clear cell adenocarcinoma, NOS	Alive	1502
+TCGA-BP-4973-01A	TCGA-BP-4973	tumour	Primary Tumor	male	47	Stage III	Clear cell adenocarcinoma, NOS	Alive	1384
+TCGA-BP-4974-01A	TCGA-BP-4974	tumour	Primary Tumor	male	58		Not Reported	Dead	211
+TCGA-BP-4975-01A	TCGA-BP-4975	tumour	Primary Tumor	male	40	Stage I	Clear cell adenocarcinoma, NOS	Alive	1433
+TCGA-BP-4976-01A	TCGA-BP-4976	tumour	Primary Tumor	male	77	Stage I	Clear cell adenocarcinoma, NOS	Alive	1632
+TCGA-BP-4977-01A	TCGA-BP-4977	tumour	Primary Tumor	male	57	Stage I	Clear cell adenocarcinoma, NOS	Alive	454
+TCGA-BP-4981-01A	TCGA-BP-4981	tumour	Primary Tumor	female	75	Stage III	Clear cell adenocarcinoma, NOS	Dead	1097
+TCGA-BP-4982-01A	TCGA-BP-4982	tumour	Primary Tumor	male	42	Stage I	Clear cell adenocarcinoma, NOS	Alive	1014
+TCGA-BP-4983-01A	TCGA-BP-4983	tumour	Primary Tumor	female	67	Stage III	Clear cell adenocarcinoma, NOS	Alive	1413
+TCGA-BP-4985-01A	TCGA-BP-4985	tumour	Primary Tumor	male	73		Not Reported	Dead	952
+TCGA-BP-4986-01A	TCGA-BP-4986	tumour	Primary Tumor	male	75	Stage I	Clear cell adenocarcinoma, NOS	Alive	785
+TCGA-BP-4987-01A	TCGA-BP-4987	tumour	Primary Tumor	female	41	Stage I	Clear cell adenocarcinoma, NOS	Alive	1124
+TCGA-BP-4988-01A	TCGA-BP-4988	tumour	Primary Tumor	male	72	Stage I	Clear cell adenocarcinoma, NOS	Dead	828
+TCGA-BP-4989-01A	TCGA-BP-4989	tumour	Primary Tumor	male	58	Stage III	Clear cell adenocarcinoma, NOS	Alive	118
+TCGA-BP-4991-01A	TCGA-BP-4991	tumour	Primary Tumor	male	54	Stage I	Clear cell adenocarcinoma, NOS	Alive	1413
+TCGA-BP-4992-01A	TCGA-BP-4992	tumour	Primary Tumor	male	66	Stage I	Clear cell adenocarcinoma, NOS	Alive	501
+TCGA-BP-4993-01A	TCGA-BP-4993	tumour	Primary Tumor	male	58	Stage I	Clear cell adenocarcinoma, NOS	Alive	177
+TCGA-BP-4994-01A	TCGA-BP-4994	tumour	Primary Tumor	male	54	Stage I	Clear cell adenocarcinoma, NOS	Alive	1308
+TCGA-BP-4995-01A	TCGA-BP-4995	tumour	Primary Tumor	male	68	Stage I	Clear cell adenocarcinoma, NOS	Alive	1371
+TCGA-BP-4998-01A	TCGA-BP-4998	tumour	Primary Tumor	male	49	Stage I	Clear cell adenocarcinoma, NOS	Alive	932
+TCGA-BP-4999-01A	TCGA-BP-4999	tumour	Primary Tumor	male	56	Stage I	Clear cell adenocarcinoma, NOS	Alive	1266
+TCGA-BP-5000-01A	TCGA-BP-5000	tumour	Primary Tumor	male	40	Stage I	Clear cell adenocarcinoma, NOS	Alive	563
+TCGA-BP-5001-01A	TCGA-BP-5001	tumour	Primary Tumor	female	43	Stage I	Clear cell adenocarcinoma, NOS	Alive	1177
+TCGA-BP-5004-01A	TCGA-BP-5004	tumour	Primary Tumor	male	53	Stage I	Clear cell adenocarcinoma, NOS	Alive	1126
+TCGA-BP-5006-01A	TCGA-BP-5006	tumour	Primary Tumor	male	61	Stage I	Clear cell adenocarcinoma, NOS	Alive	840
+TCGA-BP-5007-01A	TCGA-BP-5007	tumour	Primary Tumor	male	45	Stage II	Clear cell adenocarcinoma, NOS	Alive	1140
+TCGA-BP-5008-01A	TCGA-BP-5008	tumour	Primary Tumor	male	46	Stage I	Clear cell adenocarcinoma, NOS	Alive	1071
+TCGA-BP-5009-01A	TCGA-BP-5009	tumour	Primary Tumor	male	52	Stage I	Clear cell adenocarcinoma, NOS	Dead	1092
+TCGA-BP-5010-01A	TCGA-BP-5010	tumour	Primary Tumor	male	65		Not Reported	Dead	878
+TCGA-BP-5168-01A	TCGA-BP-5168	tumour	Primary Tumor	male	75	Stage I	Clear cell adenocarcinoma, NOS	Dead	1463
+TCGA-BP-5169-01A	TCGA-BP-5169	tumour	Primary Tumor	male	70	Stage I	Clear cell adenocarcinoma, NOS	Alive	193
+TCGA-BP-5170-01A	TCGA-BP-5170	tumour	Primary Tumor	male	55	Stage I	Clear cell adenocarcinoma, NOS	Alive	2412
+TCGA-BP-5173-01A	TCGA-BP-5173	tumour	Primary Tumor	male	75	Stage I	Clear cell adenocarcinoma, NOS	Dead	62
+TCGA-BP-5174-01A	TCGA-BP-5174	tumour	Primary Tumor	female	45	Stage I	Clear cell adenocarcinoma, NOS	Alive	2257
+TCGA-BP-5175-01A	TCGA-BP-5175	tumour	Primary Tumor	male	60	Stage I	Clear cell adenocarcinoma, NOS	Alive	932
+TCGA-BP-5176-01A	TCGA-BP-5176	tumour	Primary Tumor	female	78	Stage I	Clear cell adenocarcinoma, NOS	Dead	1590
+TCGA-BP-5177-01A	TCGA-BP-5177	tumour	Primary Tumor	female	46	Stage I	Clear cell adenocarcinoma, NOS	Alive	293
+TCGA-BP-5178-01A	TCGA-BP-5178	tumour	Primary Tumor	male	71	Stage IV	Clear cell adenocarcinoma, NOS	Dead	1912
+TCGA-BP-5180-01A	TCGA-BP-5180	tumour	Primary Tumor	male	53	Stage I	Clear cell adenocarcinoma, NOS	Alive	2263
+TCGA-BP-5181-01A	TCGA-BP-5181	tumour	Primary Tumor	female	58	Stage I	Clear cell adenocarcinoma, NOS	Alive	1495
+TCGA-BP-5182-01A	TCGA-BP-5182	tumour	Primary Tumor	male	56	Stage I	Clear cell adenocarcinoma, NOS	Alive	1165
+TCGA-BP-5183-01A	TCGA-BP-5183	tumour	Primary Tumor	male	58		Clear cell adenocarcinoma, NOS	Alive	1291
+TCGA-BP-5184-01A	TCGA-BP-5184	tumour	Primary Tumor	male	54	Stage I	Clear cell adenocarcinoma, NOS	Alive	1133
+TCGA-BP-5185-01A	TCGA-BP-5185	tumour	Primary Tumor	male	56	Stage I	Clear cell adenocarcinoma, NOS	Alive	1132
+TCGA-BP-5186-01A	TCGA-BP-5186	tumour	Primary Tumor	female	50	Stage I	Clear cell adenocarcinoma, NOS	Alive	693
+TCGA-BP-5187-01A	TCGA-BP-5187	tumour	Primary Tumor	male	54	Stage I	Clear cell adenocarcinoma, NOS	Alive	406
+TCGA-BP-5189-01A	TCGA-BP-5189	tumour	Primary Tumor	male	60	Stage I	Clear cell adenocarcinoma, NOS	Dead	822
+TCGA-BP-5190-01A	TCGA-BP-5190	tumour	Primary Tumor	male	61	Stage I	Clear cell adenocarcinoma, NOS	Alive	1011
+TCGA-BP-5191-01A	TCGA-BP-5191	tumour	Primary Tumor	male	79	Stage III	Clear cell adenocarcinoma, NOS	Alive	967
+TCGA-BP-5192-01A	TCGA-BP-5192	tumour	Primary Tumor	male	59	Stage I	Clear cell adenocarcinoma, NOS	Alive	714
+TCGA-BP-5194-01A	TCGA-BP-5194	tumour	Primary Tumor	male	39	Stage I	Clear cell adenocarcinoma, NOS	Alive	408
+TCGA-BP-5195-01A	TCGA-BP-5195	tumour	Primary Tumor	male	75	Stage I	Clear cell adenocarcinoma, NOS	Alive	749
+TCGA-BP-5196-01A	TCGA-BP-5196	tumour	Primary Tumor	male	53	Stage I	Clear cell adenocarcinoma, NOS	Alive	1018
+TCGA-BP-5198-01A	TCGA-BP-5198	tumour	Primary Tumor	male	72	Stage III	Clear cell adenocarcinoma, NOS	Alive	603
+TCGA-BP-5199-01A	TCGA-BP-5199	tumour	Primary Tumor	male	58	Stage II	Clear cell adenocarcinoma, NOS	Alive	1355
+TCGA-BP-5200-01A	TCGA-BP-5200	tumour	Primary Tumor	male	44	Stage II	Clear cell adenocarcinoma, NOS	Alive	1063
+TCGA-BP-5201-01A	TCGA-BP-5201	tumour	Primary Tumor	male	63	Stage IV	Clear cell adenocarcinoma, NOS	Alive	951
+TCGA-BP-5202-01A	TCGA-BP-5202	tumour	Primary Tumor	male	75	Stage III	Clear cell adenocarcinoma, NOS	Alive	29
+TCGA-CJ-4634-01A	TCGA-CJ-4634	tumour	Primary Tumor	female	60	Stage I	Clear cell adenocarcinoma, NOS	Alive	3498
+TCGA-CJ-4635-01A	TCGA-CJ-4635	tumour	Primary Tumor	male	48	Stage I	Clear cell adenocarcinoma, NOS	Alive	1416
+TCGA-CJ-4636-01A	TCGA-CJ-4636	tumour	Primary Tumor	male	51	Stage III	Clear cell adenocarcinoma, NOS	Alive	1924
+TCGA-CJ-4637-01A	TCGA-CJ-4637	tumour	Primary Tumor	female	52	Stage IV	Clear cell adenocarcinoma, NOS	Dead	2227
+TCGA-CJ-4638-01A	TCGA-CJ-4638	tumour	Primary Tumor	female	46	Stage IV	Clear cell adenocarcinoma, NOS	Dead	431
+TCGA-CJ-4639-01A	TCGA-CJ-4639	tumour	Primary Tumor	female	49	Stage II	Clear cell adenocarcinoma, NOS	Alive	3229
+TCGA-CJ-4640-01A	TCGA-CJ-4640	tumour	Primary Tumor	male	49	Stage III	Clear cell adenocarcinoma, NOS	Alive	3480
+TCGA-CJ-4641-01A	TCGA-CJ-4641	tumour	Primary Tumor	female	55	Stage IV	Clear cell adenocarcinoma, NOS	Dead	1661
+TCGA-CJ-4642-01B	TCGA-CJ-4642	tumour	Primary Tumor	male	47	Stage II	Clear cell adenocarcinoma, NOS	Alive	3205
+TCGA-CJ-4643-01A	TCGA-CJ-4643	tumour	Primary Tumor	female	67	Stage II	Clear cell adenocarcinoma, NOS	Alive	1793
+TCGA-CJ-4644-01A	TCGA-CJ-4644	tumour	Primary Tumor	female	48	Stage IV	Clear cell adenocarcinoma, NOS	Dead	336
+TCGA-CJ-4868-01A	TCGA-CJ-4868	tumour	Primary Tumor	male	42	Stage IV	Clear cell adenocarcinoma, NOS	Dead	646
+TCGA-CJ-4869-01A	TCGA-CJ-4869	tumour	Primary Tumor	male	49	Stage III	Clear cell adenocarcinoma, NOS	Alive	2554
+TCGA-CJ-4870-01A	TCGA-CJ-4870	tumour	Primary Tumor	female	58	Stage III	Clear cell adenocarcinoma, NOS	Alive	1498
+TCGA-CJ-4871-01A	TCGA-CJ-4871	tumour	Primary Tumor	male	63		Clear cell adenocarcinoma, NOS	Alive	2423
+TCGA-CJ-4872-01A	TCGA-CJ-4872	tumour	Primary Tumor	male	51	Stage I	Clear cell adenocarcinoma, NOS	Alive	1435
+TCGA-CJ-4873-01A	TCGA-CJ-4873	tumour	Primary Tumor	female	85	Stage III	Clear cell adenocarcinoma, NOS	Alive	1776
+TCGA-CJ-4874-01A	TCGA-CJ-4874	tumour	Primary Tumor	female	73	Stage I	Clear cell adenocarcinoma, NOS	Alive	2283

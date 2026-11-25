@@ -1,0 +1,5 @@
+metric	value	meaning
+Concordance index	0.6218	Share of comparable patient pairs ranked correctly; 0.5 is guessing
+Concordance index, lower end of the 95% interval	0.485	From 1,000 bootstrap resamples of the test patients
+Concordance index, upper end of the 95% interval	0.7519	
+Log-rank p-value, high against low risk	0.1192	Whether the two predicted risk groups differ in survival

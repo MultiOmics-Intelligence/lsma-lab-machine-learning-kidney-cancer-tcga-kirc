@@ -1,0 +1,11 @@
+metric	value	meaning
+ROC AUC	0.9464	How well the model ranks positive above negative samples; 0.5 is guessing, 1 is perfect
+ROC AUC, lower end of the 95% interval	0.8148	From 1,000 bootstrap resamples of the test samples
+ROC AUC, upper end of the 95% interval	1	
+Accuracy	0.8333	Share of test samples classified correctly at a probability threshold of 0.5
+Balanced accuracy	0.9107	Mean of sensitivity and specificity; not fooled by unbalanced classes
+Sensitivity (recall of 'Stage IV')	1	Share of 'Stage IV' samples the model finds
+Specificity (recall of 'Stage I')	0.8214	Share of 'Stage I' samples the model leaves alone
+Precision for 'Stage IV'	0.2857	Of the samples called 'Stage IV', the share that really are
+F1 score	0.4444	Harmonic mean of precision and sensitivity
+Average precision	0.7	Area under the precision-recall curve

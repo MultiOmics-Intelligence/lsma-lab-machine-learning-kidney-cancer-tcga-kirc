@@ -1,0 +1,5 @@
+model	measure	value	95% interval (bootstrap)	patients
+survival	Concordance index	0.6382	0.552 to 0.721	200 patients, 45 deaths
+survival	Log-rank p, predicted high vs low risk (cut-off from cohort 1)	0.0077		101 high risk, 99 low risk
+stage	ROC AUC, Stage IV vs Stage I	0.8172	0.607 to 0.971	9 Stage IV, 110 Stage I
+stage	Balanced accuracy at probability 0.5	0.6904		

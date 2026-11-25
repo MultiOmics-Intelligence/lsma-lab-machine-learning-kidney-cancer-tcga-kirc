@@ -209,7 +209,7 @@ $c_{gi}$ is the count of gene $g$ in tumour $i$ and $L_i$ the tumour's total cou
 **Penalised Cox model (survival).** The hazard of death is $h(t \mid x) = h_0(t) \exp(\beta^\top x)$, and lifelines finds
 
 $$
-\hat{\beta} = \underset{\beta}{\operatorname{arg\ max}} \  \ell(\beta) - n \lambda \left( \rho \lVert \beta \rVert_1 + \frac{1 - \rho}{2} \lVert \beta \rVert_2^2 \right), \qquad \ell(\beta) = \sum_{i  :  \delta_i = 1} \left( \beta^\top x_i - \log \sum_{j \in R(t_i)} e^{\beta^\top x_j} \right)
+\hat{\beta} = \underset{\beta}{\arg\max} \  \ell(\beta) - n \lambda \left( \rho \lVert \beta \rVert_1 + \frac{1 - \rho}{2} \lVert \beta \rVert_2^2 \right), \qquad \ell(\beta) = \sum_{i  :  \delta_i = 1} \left( \beta^\top x_i - \log \sum_{j \in R(t_i)} e^{\beta^\top x_j} \right)
 $$
 
 $\ell$ is the log partial likelihood: $\delta_i = 1$ if patient $i$ died, and $R(t_i)$ is the set of patients still followed at that time (lifelines uses Efron's correction when deaths share a time). $n$ is the number of training patients, $\lambda$ the penalizer, chosen from 0.1, 0.5 and 2.0 by 5-fold cross-validation (0.1 won), and $\rho = 0.5$ the l1_ratio. The L1 part pushes weak genes towards zero; lifelines replaces $\lvert \beta \rvert$ by a smooth approximation while fitting. $x$ holds the 50 most variable genes of the training patients. The risk score is $r = \hat{\beta}^\top x$.

@@ -194,6 +194,100 @@ Every step below is a stage in the LSMA Analysis Lab, run with the settings in [
 
 **Software:** Python 3.12 with scikit-learn 1.9.1, lifelines 0.30.3, numpy, pandas and scipy, in the versions listed in the settings file.
 
+## The mathematics behind the methods
+
+The formulas below are the ones the lab's code applies (lifelines and scikit-learn), with the settings of this run.
+
+**Features.**
+
+$$
+x_{gi} = \log_2\left( \frac{10^6  c_{gi}}{L_i} + 1 \right)
+$$
+
+$c_{gi}$ is the count of gene $g$ in tumour $i$ and $L_i$ the tumour's total count. Inside each model, genes are standardised with the mean and standard deviation of the training patients only.
+
+**Penalised Cox model (survival).** The hazard of death is $h(t \mid x) = h_0(t) \exp(\beta^\top x)$, and lifelines finds
+
+$$
+\hat{\beta} = \underset{\beta}{\operatorname{arg\ max}} \  \ell(\beta) - n \lambda \left( \rho \lVert \beta \rVert_1 + \frac{1 - \rho}{2} \lVert \beta \rVert_2^2 \right), \qquad \ell(\beta) = \sum_{i  :  \delta_i = 1} \left( \beta^\top x_i - \log \sum_{j \in R(t_i)} e^{\beta^\top x_j} \right)
+$$
+
+$\ell$ is the log partial likelihood: $\delta_i = 1$ if patient $i$ died, and $R(t_i)$ is the set of patients still followed at that time (lifelines uses Efron's correction when deaths share a time). $n$ is the number of training patients, $\lambda$ the penalizer, chosen from 0.1, 0.5 and 2.0 by 5-fold cross-validation (0.1 won), and $\rho = 0.5$ the l1_ratio. The L1 part pushes weak genes towards zero; lifelines replaces $\lvert \beta \rvert$ by a smooth approximation while fitting. $x$ holds the 50 most variable genes of the training patients. The risk score is $r = \hat{\beta}^\top x$.
+
+**The frozen-model test.** For cohort 2, each gene was standardised with the cohort-1 training mean and standard deviation, and $r = \hat{\beta}^\top x$ was computed with $\hat{\beta}$ unchanged. Patients above the median risk of the cohort-1 training patients were called high risk. Nothing was refitted.
+
+**Concordance index.**
+
+$$
+C = \frac{\sum_{i,j} \mathbf{1}[t_i < t_j]  \delta_i \left( \mathbf{1}[r_i > r_j] + \tfrac{1}{2}\mathbf{1}[r_i = r_j] \right)}{\sum_{i,j} \mathbf{1}[t_i < t_j]  \delta_i}
+$$
+
+A pair of patients can be compared when the one with the shorter time died. $C$ is the share of such pairs in which that patient had the higher risk score: 0.5 is guessing and 1 a perfect ranking.
+
+**Log-rank test (high against low risk).**
+
+$$
+\chi^2 = \frac{\left( \sum_t (O_{1t} - E_{1t}) \right)^2}{\sum_t V_t}, \qquad E_{1t} = d_t \frac{n_{1t}}{n_t}, \qquad V_t = \frac{n_{1t}  n_{2t}  d_t  (n_t - d_t)}{n_t^2  (n_t - 1)}
+$$
+
+At each time of death $t$, $n_t$ patients are still followed ($n_{1t}$ and $n_{2t}$ in each group), $d_t$ die, and $O_{1t}$ of the deaths are in the high-risk group. $\chi^2$ is compared with a chi-squared distribution on 1 degree of freedom.
+
+**Gene selection by F statistic (stage).**
+
+$$
+F_g = \frac{\sum_{k} n_k \left( \bar{x}_{gk} - \bar{x}_g \right)^2 / (K - 1)}{\sum_{k} \sum_{i \in k} \left( x_{gi} - \bar{x}_{gk} \right)^2 / (N - K)}
+$$
+
+The one-way ANOVA F statistic of gene $g$ for $K = 2$ classes (stage IV and stage I) among the $N$ training patients of a fold: the spread between the class means over the spread within classes. The 200 genes with the largest $F_g$ were kept, chosen again inside every fold.
+
+**Penalised logistic regression.** With $y_i = \pm 1$,
+
+$$
+\min_{w,  b} \  C \sum_{i} s_i \log\left( 1 + e^{-y_i (w^\top x_i + b)} \right) + \frac{1 - \rho}{2} \lVert w \rVert_2^2 + \rho \lVert w \rVert_1
+$$
+
+$\rho = 0$ gives the L2 model, $\rho = 1$ the lasso and $\rho$ of 0.2 or 0.8 the elastic net; $C$ (the inverse penalty strength) was tuned from a small grid by the inner cross-validation. The weights $s_i = N / (2 N_{y_i})$, where $N_{y_i}$ is the size of the class of patient $i$, make the rarer stage IV tumours count as much in total as the stage I tumours. The linear SVM replaces the logistic loss by the hinge loss $\max(0,  1 - y_i (w^\top x_i + b))$ with an L2 penalty.
+
+**Random forest (the chosen model).**
+
+$$
+\hat{p}(x) = \frac{1}{B} \sum_{b=1}^{B} \hat{p}_b(x), \qquad G = 1 - \sum_{k} \pi_k^2
+$$
+
+Each of $B = 300$ trees is grown on a bootstrap sample of patients, trying $\sqrt{200} \approx 14$ randomly chosen genes at each split and choosing the split that most reduces the Gini impurity $G$ ($`\pi_k`$ is the share of class $k$ in a node, weighted for balance). The forest's probability is the mean over the trees. Gradient boosting instead adds small trees one at a time, each fitted to reduce the logistic loss left by the trees before it.
+
+**ROC AUC and balanced accuracy.**
+
+$$
+\text{AUC} = P\left( \hat{p}_{+} > \hat{p}_{-} \right) + \tfrac{1}{2} P\left( \hat{p}_{+} = \hat{p}_{-} \right), \qquad \text{balanced accuracy} = \frac{1}{2} \left( \frac{TP}{TP + FN} + \frac{TN}{TN + FP} \right)
+$$
+
+The AUC is the chance that a randomly chosen stage IV tumour gets a higher predicted probability than a randomly chosen stage I tumour. Balanced accuracy is the mean of sensitivity and specificity at a probability threshold of 0.5.
+
+**Permutation test of the classifier.**
+
+$$
+p = \frac{b + 1}{B + 1}
+$$
+
+The stage labels of the training patients were shuffled $B = 100$ times and the whole procedure (selection, tuning, cross-validation) repeated; $b$ counts the shuffles with a cross-validated AUC at least as high as the real one. With $b = 0$, $p = 1/101 \approx 0.0099$, the smallest value 100 shuffles can give.
+
+**Permutation importance.**
+
+$$
+I_g = \text{AUC} - \frac{1}{R} \sum_{r=1}^{R} \text{AUC}^{(g,  r)}
+$$
+
+$\text{AUC}^{(g,r)}$ is the test AUC after shuffling gene $g$ among the test patients, repeated $R = 20$ times. A gene the model relies on loses AUC when its link to the patients is broken.
+
+**Bootstrap intervals.**
+
+$$
+\left[ \hat{\theta}^{\ast}_{(0.025)},\  \hat{\theta}^{\ast}_{(0.975)} \right]
+$$
+
+The test patients were resampled with replacement 1,000 times and the AUC or C-index $\hat{\theta}^{\ast}$ computed on each resample (resamples with only one class, or fewer than two deaths, were skipped). The interval runs from the 2.5th to the 97.5th percentile of these values.
+
 ---
 
 ## Validation
